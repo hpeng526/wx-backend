@@ -2,9 +2,9 @@ package server
 
 import (
 	"fmt"
+	"github.com/hpeng526/wx-backend/mq"
 	"github.com/hpeng526/wx/cache"
 	"github.com/hpeng526/wx/context"
-	"wx-backend/mq"
 )
 
 type MqServer struct {

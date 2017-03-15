@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/hpeng526/wx-backend/server"
 	"time"
-	"wx-backend/server"
 )
 
 func main() {
