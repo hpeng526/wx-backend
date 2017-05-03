@@ -1,0 +1,29 @@
+{
+	"ImportPath": "github.com/hpeng526/wx-backend",
+	"GoVersion": "go1.8",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/garyburd/redigo/internal",
+			"Comment": "v1.0.0-20-g4854517",
+			"Rev": "48545177e92ae3e7bcdbd50b42f7a139e6a268da"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/redis",
+			"Comment": "v1.0.0-20-g4854517",
+			"Rev": "48545177e92ae3e7bcdbd50b42f7a139e6a268da"
+		},
+		{
+			"ImportPath": "github.com/hpeng526/wx/cache",
+			"Rev": "fdebba500a31524ba9036917545b6cecab0ee6a5"
+		},
+		{
+			"ImportPath": "github.com/hpeng526/wx/context",
+			"Rev": "fdebba500a31524ba9036917545b6cecab0ee6a5"
+		},
+		{
+			"ImportPath": "github.com/hpeng526/wx/template",
+			"Rev": "fdebba500a31524ba9036917545b6cecab0ee6a5"
+		}
+	]
+}
