@@ -1,4 +1,4 @@
-package mq
+package main
 
 import (
 	"encoding/json"
@@ -20,6 +20,4 @@ func TestTmpData(t *testing.T) {
 	}
 	fmt.Printf("tmp is : %v \n", string(jsonData))
 
-	//redisMq := NewRedisMq("127.0.0.1:6379")
-	//redisMq.Offer("testmq", string(jsonData))
 }

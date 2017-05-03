@@ -1,9 +1,8 @@
-package server
+package main
 
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/hpeng526/wx-backend/mq"
 	"github.com/hpeng526/wx/cache"
 	"github.com/hpeng526/wx/context"
 	"github.com/hpeng526/wx/template"
@@ -11,12 +10,12 @@ import (
 
 type MqServer struct {
 	Ctx context.Context
-	Mq  mq.MessageQueue
+	Mq  MessageQueue
 }
 
 func NewRedisMqServer(appId string, appSecret string, serverAddr string) *MqServer {
 	ctx := context.Context{AppID: appId, AppSecret: appSecret, Cache: cache.NewRedisCache(serverAddr)}
-	redisMq := mq.NewRedisMq(serverAddr)
+	redisMq := NewRedisMq(serverAddr)
 	return &MqServer{Ctx: ctx, Mq: redisMq}
 }
 

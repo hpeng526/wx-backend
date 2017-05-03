@@ -1,4 +1,4 @@
-package po
+package main
 
 type Inner struct {
 	Value string `json:"value"`
